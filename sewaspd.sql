@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2024 at 02:25 PM
+-- Generation Time: May 17, 2024 at 08:20 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -42,6 +42,7 @@ CREATE TABLE `pelanggan` (
 INSERT INTO `pelanggan` (`username`, `password`, `nama_pelanggan`, `nomor_telepon`, `alamat`) VALUES
 ('aesxiety', '123', 'Dwi Reza Ariyadi', 'Jln. Perjuang', '085705297230'),
 ('dipa', '123', 'dipa', 'iyh', '0123'),
+('UjangH', '1234', 'Ujang HJ', '12342', 'jkdj'),
 ('UjangM', '1234', 'Ujang Mahendra', '0812345678', 'Jalan. Rumah Saya No.1 Blok Z');
 
 -- --------------------------------------------------------
@@ -67,9 +68,9 @@ CREATE TABLE `sepeda_listrik` (
 
 INSERT INTO `sepeda_listrik` (`kode_sepeda`, `tipe_sepeda`, `kapasitas_baterai`, `jarak_tempuh`, `tarif`, `status`, `perawatan_terakhir`, `id_stasiun`) VALUES
 ('CVX001', 'Crosser VX', 12, 60, 80000, 'tersedia', '2024-05-13', 'SMD101 - S'),
-('CVX088', 'Crosser VX', 970, 60, 80000, 'tersedia', '2024-05-10', 'BPN101 - J'),
-('VP003', 'Varilux Pro', 960, 65, 65000, 'disewa', '2024-05-13', 'SMD101 - S'),
-('VR5002', 'Ventura R5', 12, 50, 50000, 'disewa', '2024-05-10', 'BPN101 - J');
+('VP003', 'Varilux Pro', 960, 65, 65000, 'tersedia', '2024-05-13', 'SMD101 - S'),
+('VP004', 'Varilux Pro', 960, 60, 65000, 'tersedia', '2024-05-10', 'SMD101 - S'),
+('VR5002', 'Ventura R5', 12, 50, 50000, 'tersedia', '2024-05-10', 'BPN101 - J');
 
 -- --------------------------------------------------------
 
@@ -96,9 +97,7 @@ CREATE TABLE `transaksi` (
 --
 
 INSERT INTO `transaksi` (`id_transaksi`, `id_pelanggan`, `id_sepeda`, `lama_sewa`, `tgl_sewa_awal`, `tgl_sewa_akhir`, `paket`, `tarif`, `stasiun_sepeda`, `denda`, `status`) VALUES
-('1', 'UjangM', 'VR5002', 1, '2024-05-17', '2024-05-18', 'helm, helm', 70000, 'SMD101 - Sempaja Utara', 0, 'Done'),
-('2', 'UjangM', 'VR5002', 1, '2024-05-17', '2024-05-18', 'helm,', 70000, 'SMD101 - Sempaja Utara', 150000, 'Done'),
-('3', 'UjangM', 'VR5002', 1, '2024-05-17', '2024-05-18', 'helm, extra batt', 105000, 'SMD101 - Sempaja Utara', NULL, 'Applied');
+('1', 'UjangH', 'VR5002', 1, '2024-05-18', '2024-05-19', 'helm, helm, helm', 70000, 'BPN101 - Jln Jendral Sudirman, Balikpapan Utara', 150000, 'Done');
 
 --
 -- Indexes for dumped tables

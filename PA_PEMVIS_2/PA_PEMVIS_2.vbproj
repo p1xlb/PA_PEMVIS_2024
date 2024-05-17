@@ -180,6 +180,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RentHistory.resx">
       <DependentUpon>RentHistory.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UserDash.resx">
       <DependentUpon>UserDash.vb</DependentUpon>
