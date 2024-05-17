@@ -184,6 +184,7 @@ Partial Class Registrasi
         Me.txtPassword.Location = New System.Drawing.Point(796, 172)
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.txtPassword.Size = New System.Drawing.Size(275, 22)
         Me.txtPassword.TabIndex = 16
         '
@@ -203,9 +204,9 @@ Partial Class Registrasi
         Me.Label8.Location = New System.Drawing.Point(844, 61)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(116, 36)
+        Me.Label8.Size = New System.Drawing.Size(158, 36)
         Me.Label8.TabIndex = 27
-        Me.Label8.Text = "Sign In"
+        Me.Label8.Text = "Registrasi"
         '
         'Registrasi
         '

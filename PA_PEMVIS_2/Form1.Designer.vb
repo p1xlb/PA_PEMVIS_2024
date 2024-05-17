@@ -54,6 +54,7 @@ Partial Class Form1
         Me.txtPassword.Location = New System.Drawing.Point(115, 314)
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.txtPassword.Size = New System.Drawing.Size(325, 22)
         Me.txtPassword.TabIndex = 14
         '
